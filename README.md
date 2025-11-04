@@ -28,9 +28,9 @@
 
 | Membre   | Rôle       | Missions |
 | -------- | ---------- | -------- |
-| membre 1 | PO         | -        |
-| membre 2 | SM         | -        |
-| membre 3 | Technicien | -        |
+| Sami | PO         | -        |
+| Christian | SM         | -        |
+| Anis | Technicien | -        |
 | membre 4 | Technicien | -        |
 
 **Sprint 2**
