@@ -12,12 +12,21 @@
 
 # 🎯 Présentation du projet
 <span id="presentation-du-projet"></span>
-**Sujet choisi**
+### La téléassistance
 
-**Présentation**
+**Présentation**  
+Le but de ce projet est la mise en place de systèmes de téléassistance pour la prise de contrôle à distance. Pour cela nous avons utilisés 4 machines en réseaux local et installé plusieurs logiciels pour la communication entre les machines.
 
-**Objectifs finaux**
+**Objectifs finaux**  
+Les objectifs finaux de ce projet sont :
+ - 1 : la prise de contrôle à distance du : 
+      - Client Windows vers Windows Server avec **VNC** et **RDP**
+      - Client Windows vers Debian Server avec **PuTTY**
+      - Client Linux Vers Windows Server avec **VNC**
+      - Client Linux vers Debian Server avec **openssh**
 
+ - 2 : La création d'un groupe local "Assistance" sur le client Windows pour la prise de contrôle à distance
+ - 3 : La sécurisation d'une connexion SSH 
 
 # 📜 Introduction
 <span id="introduction"></span>
