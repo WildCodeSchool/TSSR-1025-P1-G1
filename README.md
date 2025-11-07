@@ -28,10 +28,10 @@
 
 | Membre   | Rôle       | Missions |
 | -------- | ---------- | -------- |
-| Sami | PO         | -        |
-| Christian | SM         | -        |
-| Anis | Technicien | -        |
-| membre 4 | Technicien | -        |
+| Sami | PO         | Mise en place des serveurs, documentation des serveurs        |
+| Christian | SM         | Mise en place Windows Client, documentation Windows Client        |
+| Anis | Technicien | Mise en place de Linux Client, documentation Linux Client        |
+
 
 **Sprint 2**
 
