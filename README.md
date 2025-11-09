@@ -1,4 +1,4 @@
-![logo de la Wild Code SChool en exemple](Ressources/logo_WCS.jpg)
+![Image_Téléassistance](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Image_Teleassistance.png)
 
 ## Sommaire 
 
@@ -35,25 +35,26 @@ Les objectifs finaux de ce projet sont :
 <span id="membres-du-groupe-par-sprint"></span>
 **Sprint 1**
 
-| Membre   | Rôle       | Missions |
-| -------- | ---------- | -------- |
-| Sami | PO         | Mise en place de Linux Client, documentation Linux Client              |
-| Christian | SM         | Mise en place Windows Client, documentation Windows Client        |
-| Anis | Technicien | Mise en place des serveurs, documentation des serveurs        |
+| Membre     | Rôle       | Missions |
+| ---------- | ---------- | -------- |
+|  Anis      | PO         | Mise en place des serveurs, documentation des serveurs      |
+|  Christian | SM         | Mise en place Windows Client, documentation Windows Client  |
+|  Sami      | Technicien | Mise en place de Linux Client, documentation Linux Client   | 
 
 
 **Sprint 2**
 
-| Membre   | Rôle       | Missions |
-| -------- | ---------- | -------- |
-| membre 1 | Technicien | -        |
-| membre 2 | Technicien | -        |
-| membre 3 | PO         | -        |
-| membre 4 | SM         | -        |
+| Membre     | Rôle       | Missions |
+| ---------- | ---------- | -------- |
+| Anis       |            | -        |
+| Christian  |            | -        |
+| Sami       |            | -        |
 
 # ⚙️ Choix techniques
 <span id="choix-techniques"></span>
 **Matériel**
+
+
 
 **Logiciel**
 
