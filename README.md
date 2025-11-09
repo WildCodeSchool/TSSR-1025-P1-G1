@@ -1,4 +1,8 @@
-![Image_Téléassistance](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Image_Teleassistance.png)
+# 🖥️ Projet 1 : Téléassistance
+
+<br>
+
+<img src="https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Image_Teleassistance.png" align="center" width="500" height="500"/>
 
 ## Sommaire 
 
