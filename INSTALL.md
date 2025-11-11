@@ -142,7 +142,7 @@ Assurez-vous que chaque machine possède :
 - Cocher **I accept the terms in the License Agreement**
 - Cliquer sur **Next**
 
-![Sceenshot - TightVNC](https://github.com/christianwildcodeschool-dotcom/firstscripting/blob/main/TightVNC/01_vnc_installation.png)
+![Sceenshot - TightVNC](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Windows/TightVNC/01_vnc_installation.png)
 
 ---
 
@@ -153,7 +153,7 @@ Assurez-vous que chaque machine possède :
 - Dans l'arborescence, **enlever** **TightVNC Server** ( Sur le poste client nous utilisons seulement le viewer)
 - Cliquer sur **Next**  
 
-![Sceenshot - TightVNC](https://github.com/christianwildcodeschool-dotcom/firstscripting/blob/main/TightVNC/02_vnc_installation.png)  
+![Sceenshot - TightVNC](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Windows/TightVNC/02_vnc_installation.png)  
 
 ---
 
@@ -165,7 +165,7 @@ Assurez-vous que chaque machine possède :
 - L'écran **Ready to install TightVNC** confirme les paramètres
 - Cliquer sur **Install** pour lancer l'installation
 
-![Sceenshot - TightVNC](https://github.com/christianwildcodeschool-dotcom/firstscripting/blob/main/TightVNC/03_vnc_installation.png)  
+![Sceenshot - TightVNC](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Windows/TightVNC/03_vnc_installation.png)  
 
 ---
 
@@ -177,7 +177,7 @@ Assurez-vous que chaque machine possède :
 - **TightVNC Viewer** apparaît dans les résultats sous **Meilleur résultat** ( TightVNC ne met pas de raccourci sur le bureau par défaut)
 - Cliquer sur **TightVNC Viewer**  
 
-![Sceenshot - TightVNC](https://github.com/christianwildcodeschool-dotcom/firstscripting/blob/main/TightVNC/04_vnc_installation.png)  
+![Sceenshot - TightVNC](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Windows/TightVNC/04_vnc_installation.png)  
 
  ---
 
@@ -186,12 +186,12 @@ Assurez-vous que chaque machine possède :
 - Cliquer sur **Connect**
 - Entrer le mot de passe configurer sur VNC Server sur le poste distant dans **Password**  
 
-![Sceenshot - TightVNC](https://github.com/christianwildcodeschool-dotcom/firstscripting/blob/main/TightVNC/05_vnc_installation.png)  
+![Sceenshot - TightVNC](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Windows/TightVNC/05_vnc_installation.png)  
 
 ---  
 
 **Étape 6 : Vous êtes connecté!**    
 
-![Sceenshot - TightVNC](https://github.com/christianwildcodeschool-dotcom/firstscripting/blob/main/TightVNC/06_vnc_installation.png)  
+![Sceenshot - TightVNC](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Windows/TightVNC/06_vnc_installation.png)  
 
 ---
