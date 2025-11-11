@@ -189,8 +189,13 @@ Assurez-vous que chaque machine possède :
 ![Sceenshot - TightVNC](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Windows/TightVNC/05_vnc_installation.png)  
 
 ---  
----
 
+**Étape 6 : Vous êtes connecté!**    
+
+![Sceenshot - TightVNC](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Windows/TightVNC/06_vnc_installation.png)  
+
+---
+---
 
 # V. Installation du Client Linux
 
@@ -381,10 +386,4 @@ Ici le nom d'utilisateur est "wilder" et le nom du serveur est "srvlx01", comme 
 
 ### **Voilà, vous avez connecté le client Linux au serveur Linux !**
  
----
-
-**Étape 6 : Vous êtes connecté!**    
-
-![Sceenshot - TightVNC](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Windows/TightVNC/06_vnc_installation.png)  
-
 ---
