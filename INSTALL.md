@@ -203,7 +203,7 @@ Assurez-vous que chaque machine possède :
 
   Installation d'une application VNC, TightVNCViewer, sur un client Linux, dans le cas présent sur la version d'Ubuntu 24.04 LTS à jour pour le lier à une machine virtuelle serveur Windows et se connecter dessus. Le serveur en question est l'OS Windows Server 2022 GUI (interface graphique), préalablement installé et configuré de TightVNCServer (Voir partie I).   
 
-<br>
+
 
 ---
  
@@ -242,14 +242,14 @@ Assurez-vous que chaque machine possède :
 ---
 - Une fois l'installation effectuée, mettre en route à côté la machine serveur Windows, ici nommée "srvwin01".
 
-<img src="https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/TightVNC/06_TightVNC_Client_Linux.png" width="500" height="400"/>
+![Image06](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/TightVNC/06_TightVNC_Client_Linux.png)
 
 ---
 - Vérifier que le processus TightVNCServer est bien actif :   
   Deux manières de faire :
 
-<br>
-  
+---
+
   a) Avec une invite de commandes ou plus communément appelé "Shell" :
 
 * Rechercher dans la barre de recherche le logiciel "PowerShell".
@@ -303,17 +303,13 @@ Assurez-vous que chaque machine possède :
 ### **Voilà, vous avez connecté le client Linux au serveur Windows !**   
 ---
 
-<br>
-<br>
-<br>
-<br>
 
 
 ## 2. Mise en place du serveur SSH
 
   Installation de la suite logicielle OpenSSH sur un client Linux, dans le cas présent sur la version d'Ubuntu 24.04 LTS à jour pour le lier à une machine vituelle serveur Linux et se connecter dessus. Le serveur en question est l'OS Debian 13.1.0 CLI (interface d'invite de commandes).  
 
-<br>
+
 
 ---
 
