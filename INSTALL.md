@@ -78,7 +78,7 @@ Assurez-vous que chaque machine possède :
 - Conserver ce dossier ou cliquer sur **Change** pour le modifier
 - Cliquer sur **Next**
 
-![Sceenshot - PuTTY](https://github.com/christianwildcodeschool-dotcom/firstscripting/blob/main/PuTTY/01_putty_installation.png)  
+![Sceenshot - PuTTY](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Windows/PuTTY/01_putty_installation.png)  
 
 ---
 
