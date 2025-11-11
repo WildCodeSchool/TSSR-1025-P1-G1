@@ -78,7 +78,7 @@ Assurez-vous que chaque machine possède :
 - Conserver ce dossier ou cliquer sur **Change** pour le modifier
 - Cliquer sur **Next**
 
-![Sceenshot - PuTTY](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Windows/PuTTY/01_putty_installation.png)  
+![Sceenshot - PuTTY](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Windows/PuTTY/02_putty_installation.png)  
 
 ---
 
@@ -94,7 +94,7 @@ Assurez-vous que chaque machine possède :
 - Cocher **View README file** si vous souhaitez consulter la documentation
 - Cliquer sur **Finish**
  
-![Sceenshot - PuTTY](https://github.com/christianwildcodeschool-dotcom/firstscripting/blob/main/PuTTY/02_putty_installation.png)
+![Sceenshot - PuTTY](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Windows/PuTTY/02_putty_installation.png)
 
 ---
 
@@ -104,7 +104,7 @@ Assurez-vous que chaque machine possède :
 - Un message d'avertissement apparait
 - Cliquer sur **Accept** pour garder la clé en cache si vous souhaitez vous connecter plus tard sinon sur **Connect Once**
 
-![Sceenshot - PuTTY](https://github.com/christianwildcodeschool-dotcom/firstscripting/blob/main/PuTTY/03_putty_installation.png)
+![Sceenshot - PuTTY](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Windows/PuTTY/03_putty_installation.png)
 
 ---
 
@@ -112,13 +112,13 @@ Assurez-vous que chaque machine possède :
 - Entrer l'identifiant utilisateur de la machine distante
 - Entrer le mot de passe de l'utilisateur précédemment entré
 
-![Sceenshot - PuTTY](https://github.com/christianwildcodeschool-dotcom/firstscripting/blob/main/PuTTY/04_putty_installation.png)
+![Sceenshot - PuTTY](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Windows/PuTTY/04_putty_installation.png)
 
 ---
 
 **Étape 5 : Vous êtes connecté!**  
 
-![Sceenshot - PuTTY](https://github.com/christianwildcodeschool-dotcom/firstscripting/blob/main/PuTTY/05_putty_installation.png)  
+![Sceenshot - PuTTY](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Windows/PuTTY/05_putty_installation.png)  
 
 ---
 ---  
