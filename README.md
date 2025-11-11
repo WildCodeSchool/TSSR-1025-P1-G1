@@ -41,16 +41,16 @@ Les objectifs finaux de ce projet sont :
 
 | Membre     | Rôle       | Missions |
 | ---------- | ---------- | -------- |
-|  Anis      | PO         | Mise en place des serveurs, documentation des serveurs      |
+|  Anis      | Technicien | Mise en place des serveurs, documentation des serveurs      |
 |  Christian | SM         | Mise en place Windows Client, documentation Windows Client  |
-|  Sami      | Technicien | Mise en place de Linux Client, documentation Linux Client   | 
+|  Sami      | PO         | Mise en place de Linux Client, documentation Linux Client   | 
 
 
 **Sprint 2**
 
 | Membre     | Rôle       | Missions |
 | ---------- | ---------- | -------- |
-| Anis       |            | -        |
+| Anis       |         | -        |
 | Christian  |            | -        |
 | Sami       |            | -        |
 
