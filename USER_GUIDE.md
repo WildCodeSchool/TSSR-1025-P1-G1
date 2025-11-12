@@ -27,6 +27,7 @@ depuis les postes clients (Windows 11 et Ubuntu 24.04).
 2. [Client Ubuntu 24.04](#2-client-ubuntu-2404)
 
 ---
+---  
 
 ## 1. Client Windows 11
 
