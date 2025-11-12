@@ -549,7 +549,7 @@ Ici le nom d'utilisateur est "wilder" et le nom du serveur est "srvlx01", comme 
  
 ---
 
-## Bonus : Se déconnecter du serveur.
+### Bonus : Se déconnecter du serveur.
 
 - Taper `logout` ou `exit` ou encore appuyer sur CTRL + D pour se déconnecter du serveur depuis le client.
 - On constate bien que le nom de la machine a changé et que vous êtes revenu sur la machine client "ubu01".
@@ -569,49 +569,54 @@ Vous pouvez générer une clé SSH entre le client et le serveur, ici entre "ubu
 - Rester dans la même session du Terminal et entrer la ligne de commande `ssh-keygen -t ed25519` (Vous pouvez ajouter l'option de nommer la clé SSH avec l'argument `-C` et le nom que vous souhaitez à la suite de la ligne de commande. Par exemple `ssh-keygen -t ed25519 -C "utilisateur@entreprise.fr"` et appuyer sur Entrée, le début du processus de génération de clé commencera.
 - Saisissez ensuite le fichier dans lequel enregistrer la clé (comme indiqué ici en anglais). Pour ma part, le chemin du fichier proposé me convient bien donc j'appuie sur Entrée.
 
-![Image11](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/12_OpenSSH_Client_Linux.png)
+![Image11](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/11_OpenSSH_Client_Linux.png)
 
 ---
 
 - Saisissez une phrase secrète si vous en souhaitez une pour plus de sécurité et confirmez-la.
 - Après avoir validé, on constate bien que la clé a été générée.
 
-![Image12](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/13_OpenSSH_Client_Linux.png)
+![Image12](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/12_OpenSSH_Client_Linux.png)
 
 ---
 
 - Mettez en marche la machine serveur en même temps donc "srvlx01" et connectez-vous.
 - Après cela, revenez sur ubu01 et entrer la ligne de commande `ssh-copy-id nom_utilisateur@adresse_ip_ou_nom_du_serveur` pour lier et sécuriser la clé SSH nouvellement créée à votre machine serveur (ici, `wilder@srvlx01`). 
 
-![Image13](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/14_OpenSSH_Client_Linux.png)
+![Image13](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/13_OpenSSH_Client_Linux.png)
 
 ---
 
 - Entrer ensuite le mot de passe de "srvlx01" et valider.
 - On constate bien qu'une clé a été ajoutée !
 
-![Image14](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/15_OpenSSH_Client_Linux.png)
+![Image14](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/14_OpenSSH_Client_Linux.png)
 
 ---
 
 - Reconnecter vous pour pouvoir constater que la clé SSH saisie a bien été ajoutée avec la ligne de commande suivante : `ssh nom_utilisateur@adresse_ip_ou_nom_du_serveur` (ici toujours `wilder@srvlx01`).
 - On constate bien que vous n'avez pas eu besoin d'entrer un mot de passe avec le changement nom de machine à côté du `@` !
 
-![Image15](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/16_OpenSSH_Client_Linux.png)
+![Image15](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/15_OpenSSH_Client_Linux.png)
 
 
 ### **Voilà, vous avez généré une clé SSH avec la machine serveur !**
 
 ---
 
-## Bonus : Se déconnecter du serveur.
+### Bonus : Se déconnecter du serveur.
 
 - Taper `logout` ou `exit` ou encore appuyer sur CTRL + D pour se déconnecter du serveur depuis le client.
 - On constate bien que le nom de la machine a changé et que vous êtes revenu sur la machine client "ubu01".
 
-![Image16](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/17_OpenSSH_Client_Linux.png)
+![Image16](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/16_OpenSSH_Client_Linux.png)
 
 
+---
+---
+
+
+# VI. FAQ et Dépannage
 
 
 
