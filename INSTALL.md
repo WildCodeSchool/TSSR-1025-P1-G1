@@ -8,6 +8,9 @@ Ce document décrit l'installation et la configuration des outils d'administrati
 ## Table des Matières
 1. [Prérequis Techniques](#1-prérequis-techniques)
 2. [Installation sur Windows Server 2022](#2-installation-sur-windows-server-2022)
+   - [2.1 TightVNC](#21-tightvnc)
+   - [2.2 RDP](#22-rdp)
+   - [2.3 Configuration Assistance](#23-configuration-assistance)
 3. [Installation sur Debian 13](#3-installation-sur-debian-13)
 4. [Installation sur Windows 11 (Client)](#4-installation-sur-windows-11-client)
    - [4.1 PuTTY](#41-putty)
@@ -52,8 +55,145 @@ Assurez-vous que chaque machine possède :
 - OpenSSH Client (généralement préinstallé)
 - TightVNC Viewer ou Remmina (pour VNC vers Windows Server)
 
----
+--
 
+# 2. Installation sur Windows Server 2022
+
+## 2.1. TightVNC
+
+---  
+
+### Etape 1 :   Lancer le téléchargement de TightVNC
+ 
+Télécharger TightVNC : https://www.tightvnc.com/download/2.8.85/tightvnc-2.8.85-gpl-setup-64bit.msi
+
+---  
+### Etape 2 :   Lancer l’exécutable d’installation
+
+- Dirigez-vous dans l’Explorateur de fichiers
+- Ouvrez le dossier "Downloads"
+- Lancez l'exécutable
+- Cliquez sur "Next" pour poursuivre l'installation
+
+![image URL](https://github.com/anis13013/projet-1/blob/main/TightVNC%20Install/01_InstallVNC.png?raw=true)
+
+---  
+### Etape 3 :   Accepter la licence et choisir le type d’installation
+ 
+- Cochez la case : "I accept the terms in the License Agreement"
+- Choisissez le type d'installation en "Typical"
+
+![image URL](https://github.com/anis13013/projet-1/blob/main/TightVNC%20Install/02_InstallVNC.png?raw=true)
+
+---  
+### Etape 4 :   Vérifier les options avant l’installation
+ 
+- Vérifiez que les cases "Associate .vnc files with TightVNC Viewer, Register TightVNC Server as a system service & Configure system to allow services simulate Ctrl-Alt-Del" sont bien cochées. 
+- Cliquez ensuite sur "Install".
+
+![image URL](https://github.com/anis13013/projet-1/blob/main/TightVNC%20Install/03_InstallVNC.png?raw=true)
+
+---  
+### Etape 5 :   Configurer la sécurité de TightVNC
+   
+- Cochez les cases "Require password-based authentication" et "Protect control interface with an administrative password".
+- Saisissez des mots de passe différents pour le Remote Access et pour l’Administrative Access.
+- Vérifiez dans les icones cachés si TightVNC est bien lancé.
+
+![image URL](https://github.com/anis13013/projet-1/blob/main/TightVNC%20Install/04_InstallVNC.png?raw=true)  
+
+---  
+---  
+
+## 2.2. RDP
+
+
+### Dans cette section, nous verrons comment activer le Bureau à distance (Remote Desktop). 
+---  
+### Etape 1 :   Ouvrir le Panneau de configuration
+  
+- Sur le bureau, dans la barre de recherche, tapez "Control Panel"  
+- Cliquez sur l'application "System and Security" 
+
+![image URL](https://github.com/anis13013/projet-1/blob/main/RDP/01_ConfigRDP.png?raw=true)
+
+---  
+### Etape 2 :   Accéder aux paramètres de Remote Desktop
+ 
+- Cliquez sur "System".
+- Une nouvelle fenêtre s’ouvre. Selon votre résolution, recherchez "Remote Desktop" dans la page "About", il peut se trouver à droite ou en bas de la page. 
+- Cliquez dessus.
+
+![image URL](https://github.com/anis13013/projet-1/blob/main/RDP/02_ConfigRDP.png?raw=true)
+
+---  
+### Etape 3 :   Activer Remote Desktop
+  
+- Cliquez sur le bouton "Enable Remote Desktop"
+- Acceptez l’autorisation en cliquant sur "Confirm"    
+
+![image URL](https://github.com/anis13013/projet-1/blob/main/RDP/03_ConfigRDP.png?raw=true)
+
+---  
+### Etape 4 :   Remote Desktop activé
+
+
+- Le Bureau à distance activé, le poste est prêt à accepter les connexions distantes, permettant aux utilisateurs autorisés d’accéder au système de manière sécurisée.
+
+![image URL](https://github.com/anis13013/projet-1/blob/main/RDP/04_ConfigRDP.png?raw=true)
+
+---  
+---  
+
+## 2.3 Configuration Assistance 
+Dans cette section nous allons ajouter un utilisateur au groupe Remote Desktop Users
+---  
+### Etape 1
+
+- Appuyez sur Windows + R
+- Tapez "compmgmt.msc"
+- Cliquez sur OK
+
+![image URL](https://github.com/anis13013/projet-1/blob/main/CONFIG%20ASSISTANCE/01_assistance_config.png?raw=true)
+---  
+### Etape 2
+
+- Cliquez sur Local Users & Groups
+- Cliquez sur Users
+
+![image URL](https://github.com/anis13013/projet-1/blob/main/CONFIG%20ASSISTANCE/02_assistance_config.png?raw=true)
+---  
+### Etape 3
+
+- Cliquez sur "Action" puis sur "New User..."
+- Tapez Wilder-Assistance
+- Cliquez sur Create 
+
+![image URL](https://github.com/anis13013/projet-1/blob/fd3c8f0708c9b3cbe0cd0bad022c13d58e9431d3/CONFIG%20ASSISTANCE/03_assistance_config.png)
+---  
+### Etape 4
+
+- Cliquez sur Action, puis sur New User...
+- Tapez Wilder-Assistance
+- Cliquez sur Create.
+
+![image URL](https://github.com/anis13013/projet-1/blob/main/CONFIG%20ASSISTANCE/04_assistance_config.png?raw=true)
+---  
+### Etape 5
+
+- Écrivez le nom de l’utilisateur qui doit avoir les autorisations nécessaires,
+- Cliquez sur Check Names. Si aucune erreur de frappe ou utilisateur inexistant n’est détecté, vous verrez un aperçu comme ceci : "Fromthislocation\User"
+ correspond au nom de la machine et User à l’utilisateur nécessitant les droits.
+- Cliquez sur OK.
+![image URL](https://github.com/anis13013/projet-1/blob/main/CONFIG%20ASSISTANCE/05_assistance_config.png?raw=true)
+---  
+### Etape 6
+
+- Cliquez sur Apply
+
+![image URL](https://github.com/anis13013/projet-1/blob/main/CONFIG%20ASSISTANCE/06_assistance_config.png?raw=true)
+
+-- 
 
 ## 4. Installation sur Windows 11 (Client)
 
