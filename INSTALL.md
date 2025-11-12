@@ -6,23 +6,31 @@ Ce document décrit l'installation et la configuration des outils d'administrati
 ---
 
 ## Table des Matières
-1. [Prérequis Techniques](#1-prérequis-techniques)
-2. [Installation sur Windows Server 2022](#2-installation-sur-windows-server-2022)
-   - [2.1 TightVNC](#21-tightvnc)
-   - [2.2 RDP](#22-rdp)
-   - [2.3 Configuration Assistance](#23-configuration-assistance)
-3. [Installation sur Debian 13](#3-installation-sur-debian-13)
-4. [Installation sur Windows 11 (Client)](#4-installation-sur-windows-11-client)
-   - [4.1 PuTTY](#41-putty)
-   - [4.2 TightVNC](#42-tightvnc)
-6. [Installation sur Ubuntu 24.04 (Client)](#5-installation-sur-ubuntu-2404-client)
-7. [FAQ et Dépannage](#6-faq-et-dépannage)
+I. [Prérequis Techniques](#I-prérequis-techniques)
+II. [Installation sur Windows Server 2022](#II-installation-sur-windows-server-2022)
+   - [1. TightVNC](#1-tightvnc)
+   - [2. RDP](#2-rdp)
+   - [3. Configuration Assistance](#3-configuration-assistance)
+III. [Installation sur Debian 13](#III-installation-sur-debian-13)
+IV. [Installation sur Windows 11 (Client)](#IV-installation-sur-windows-11-client)
+   - [1. PuTTY](#1-putty)
+      - [A. Téléchargement de PuTTY](#A-téléchargement-de-putty)
+      - [B. Installation de PuTTY](#B-installation-de-putty)
+   - [2. TightVNC](#2-tightvnc)
+      - [A. Téléchargement de TightVNC](#A-téléchargement-de-tightvnc)
+      - [B. Installation de TightVNC](#B-installation-de-tightvnc)
+V. [Installation sur Ubuntu 24.04 (Client)](#V-installation-sur-ubuntu-2404-client)
+   - [1. Installation de TightVNC](#1-installation-de-tightvnc)
+   - [2. Mise en place du serveur SSH](#2-mise-en-place-du-serveur-ssh)
+      - [A. Installation d'OpenSSH et première connexion](#A-installation-openssh-et-première-connexion)
+      - [B. Création d'une clé SSH](#B-création-clé-ssh)
+VI. [FAQ et Dépannage](#6-faq-et-dépannage)
 
 ---
 
-## 1. Prérequis Techniques
+# I. Prérequis Techniques
 
-### 1.1 Infrastructure Réseau
+## 1. Infrastructure Réseau
 - **Topologie** : Réseau local privé avec adressage IP statique
 - **Configuration requise** :
   - Serveur Windows Server 2022
@@ -31,12 +39,12 @@ Ce document décrit l'installation et la configuration des outils d'administrati
   - Client Ubuntu 24.04
 - **Connectivité** : Toutes les machines doivent pouvoir communiquer sur le réseau local
 
-### 1.2 Configuration IP
+## 2. Configuration IP
 Assurez-vous que chaque machine possède :
 - Une adresse IP statique configurée sur le réseau (172.16.10.0)
 - Un masque de sous-réseau 255.255.255.0
 
-### 1.3 Logiciels Nécessaires
+## 3. Logiciels Nécessaires
 
 #### Pour Windows Server 2022
 - TightVNC Server (pour l'accès distant graphique)
@@ -57,9 +65,9 @@ Assurez-vous que chaque machine possède :
 
 
 
-# 2. Installation sur Windows Server 2022
+# II. Installation sur Windows Server 2022
 
-## 2.1. TightVNC
+## 1. TightVNC
 
 ---  
 
@@ -105,7 +113,7 @@ Télécharger TightVNC : https://www.tightvnc.com/download/2.8.85/tightvnc-2.8.8
 ---  
 ---  
 
-## 2.2. RDP
+## 2. RDP
 
 
 ### Dans cette section, nous verrons comment activer le Bureau à distance (Remote Desktop). 
@@ -145,7 +153,7 @@ Télécharger TightVNC : https://www.tightvnc.com/download/2.8.85/tightvnc-2.8.8
 ---  
 ---  
 
-## 2.3 Configuration Assistance 
+## 3. Configuration Assistance 
 Dans cette section nous allons ajouter un utilisateur au groupe Remote Desktop Users
 ---  
 ### Etape 1
@@ -194,11 +202,22 @@ Dans cette section nous allons ajouter un utilisateur au groupe Remote Desktop U
 ![image URL](https://github.com/anis13013/projet-1/blob/main/CONFIG%20ASSISTANCE/06_assistance_config.png?raw=true)
  
 
-## 4. Installation sur Windows 11 (Client)
+---
 
-## 4.1 PuTTY  
+# III. Installation sur Debian (Serveur)
 
-### 4.1.1 Téléchargement de PuTTY  
+
+
+
+
+
+
+
+# IV. Installation et sur Windows 11 (Client)
+
+## 1. PuTTY  
+
+### A. Téléchargement de PuTTY  
 
 - Télécharger PuTTY depuis le site officiel : https://www.putty.org/
 - Lien direct vers la dernière version à installer : https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.83-installer.msi
@@ -206,7 +225,7 @@ Dans cette section nous allons ajouter un utilisateur au groupe Remote Desktop U
 
 --- 
 
-### 4.1.2 Installation de PuTTY  
+### B. Installation et de PuTTY  
 
 **Étape 1 : Accueil et choix du dossier d'installation**
 
@@ -262,16 +281,16 @@ Dans cette section nous allons ajouter un utilisateur au groupe Remote Desktop U
 ---
 ---  
 
-# 4.2 TightVNC  
+## 2. TightVNC  
 
-### 4.2.1 Téléchargement de TightVNC Viewer
+### A. Téléchargement de TightVNC Viewer
 
 - Télécharger TightVNC depuis le site officiel : https://www.tightvnc.com/
 - Lien direct vers la dernière version : https://www.tightvnc.com/download/2.8.85/tightvnc-2.8.85-gpl-setup-64bit.msi
 
 ---
 
-### 4.2.2 Installation de TightVNC Viewer
+### B. Installation de TightVNC Viewer
 
 **Étape 1 : Accueil et acceptation des termes de la licence**
 
@@ -336,9 +355,9 @@ Dans cette section nous allons ajouter un utilisateur au groupe Remote Desktop U
 ---
 ---
 
-# V. Installation du Client Linux
+# V. Installation sur Ubuntu 24.04 (Client)
 
-##  1. Installation du serveur VNC
+##  1. Installation de TightVNC
 
   Installation d'une application VNC, TightVNCViewer, sur un client Linux, dans le cas présent sur la version d'Ubuntu 24.04 LTS à jour pour le lier à une machine virtuelle serveur Windows et se connecter dessus. Le serveur en question est l'OS Windows Server 2022 GUI (interface graphique), préalablement installé et configuré de TightVNCServer (Voir partie I).   
 
@@ -445,11 +464,9 @@ Dans cette section nous allons ajouter un utilisateur au groupe Remote Desktop U
 
 
 ## 2. Mise en place du serveur SSH
-## A. Installation et première connexion sur un serveur SSH
+### A. Installation d'OpenSSH et première connexion
 
   Installation de la suite logicielle OpenSSH sur un client Linux, dans le cas présent sur la version d'Ubuntu 24.04 LTS à jour pour le lier à une machine vituelle serveur Linux et se connecter dessus. Le serveur en question est l'OS Debian 13.1.0 CLI (interface d'invite de commandes).  
-
-
 
 ---
 
@@ -529,10 +546,13 @@ Ici le nom d'utilisateur est "wilder" et le nom du serveur est "srvlx01", comme 
 - Taper `logout` ou `exit` ou encore appuyer sur CTRL + D pour se déconnecter du serveur depuis le client.
 - On constate bien que le nom de la machine a changé et que vous êtes revenu sur la machine client "ubu01".
 
+
+
 ---
 ---
 
-## B. Création d'une clé SSH  
+
+### B. Création d'une clé SSH  
 
 Vous pouvez générer une clé SSH entre le client et le serveur, ici entre "ubu01" et "srvlx01" pour ne pas avoir à rentrer le mot de passe à chaque fois et que le lien entre les deux machines soit solide.  
 
@@ -578,7 +598,7 @@ Vous pouvez générer une clé SSH entre le client et le serveur, ici entre "ubu
 
 
 
-### Voilà, vous avez généré une clé SSH avec la machine serveur !
+### **Voilà, vous avez généré une clé SSH avec la machine serveur !**
 
 ---
 
