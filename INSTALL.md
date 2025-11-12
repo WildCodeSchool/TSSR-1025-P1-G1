@@ -5,26 +5,31 @@ Ce document décrit l'installation et la configuration des outils d'administrati
 
 ---
 
-## Table des Matières
-I. [Prérequis Techniques](#I-prérequis-techniques)
-II. [Installation sur Windows Server 2022](#II-installation-sur-windows-server-2022)
-   - [1. TightVNC](#1-tightvnc)
-   - [2. RDP](#2-rdp)
-   - [3. Configuration Assistance](#3-configuration-assistance)
-III. [Installation sur Debian 13](#III-installation-sur-debian-13)
-IV. [Installation sur Windows 11 (Client)](#IV-installation-sur-windows-11-client)
-   - [1. PuTTY](#1-putty)
-      - [A. Téléchargement de PuTTY](#A-téléchargement-de-putty)
-      - [B. Installation de PuTTY](#B-installation-de-putty)
-   - [2. TightVNC](#2-tightvnc)
-      - [A. Téléchargement de TightVNC](#A-téléchargement-de-tightvnc)
-      - [B. Installation de TightVNC](#B-installation-de-tightvnc)
-V. [Installation sur Ubuntu 24.04 (Client)](#V-installation-sur-ubuntu-2404-client)
-   - [1. Installation de TightVNC](#1-installation-de-tightvnc)
-   - [2. Mise en place du serveur SSH](#2-mise-en-place-du-serveur-ssh)
-      - [A. Installation d'OpenSSH et première connexion](#A-installation-openssh-et-première-connexion)
-      - [B. Création d'une clé SSH](#B-création-clé-ssh)
-VI. [FAQ et Dépannage](#6-faq-et-dépannage)
+# Table des Matières
+I. [Prérequis Techniques](#1-prérequis-techniques)  
+
+II. [Installation sur Windows Server 2022](#2-installation-sur-windows-server-2022)  
+   - [1. TightVNC](#21-tightvnc)  
+   - [2. RDP](#22-rdp)  
+   - [3. Configuration Assistance](#23-configuration-assistance)
+
+III. [Installation sur Debian 13](#3-installation-sur-debian-13)  
+
+IV. [Installation sur Windows 11 (Client)](#4-installation-sur-windows-11-client)  
+   - [1. PuTTY](#41-putty)  
+      - [A. Téléchargement de PuTTY](#411-téléchargement-de-putty)  
+      - [B. Installation de PuTTY](#412-installation-de-putty)  
+   - [2. TightVNC](#42-tightvnc)  
+      - [A. Téléchargement de TightVNC](#421-téléchargement-de-tightvnc)  
+      - [B. Installation de TightVNC](#422-installation-de-tightvnc)
+
+V. [Installation sur Ubuntu 24.04 (Client)](#5-installation-sur-ubuntu-2404-client)  
+   - [1. Installation de TightVNC](#51-installation-de-tightvnc)  
+   - [2. Mise en place du serveur SSH](#52-mise-en-place-du-serveur-ssh)  
+      - [A. Installation d'OpenSSH et première connexion](#521-installation-openssh-et-première-connexion)  
+      - [B. Création d'une clé SSH](#522-création-clé-ssh)
+
+VI. [FAQ et Dépannage](#6-faq-et-dépannage)  
 
 ---
 
