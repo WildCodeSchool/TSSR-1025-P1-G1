@@ -192,8 +192,7 @@ Dans cette section nous allons ajouter un utilisateur au groupe Remote Desktop U
 - Cliquez sur Apply
 
 ![image URL](https://github.com/anis13013/projet-1/blob/main/CONFIG%20ASSISTANCE/06_assistance_config.png?raw=true)
-
--- 
+ 
 
 ## 4. Installation sur Windows 11 (Client)
 
