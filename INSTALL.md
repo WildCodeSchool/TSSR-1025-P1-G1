@@ -445,6 +445,7 @@ Dans cette section nous allons ajouter un utilisateur au groupe Remote Desktop U
 
 
 ## 2. Mise en place du serveur SSH
+## A. Installation et première connexion sur un serveur SSH
 
   Installation de la suite logicielle OpenSSH sur un client Linux, dans le cas présent sur la version d'Ubuntu 24.04 LTS à jour pour le lier à une machine vituelle serveur Linux et se connecter dessus. Le serveur en question est l'OS Debian 13.1.0 CLI (interface d'invite de commandes).  
 
@@ -522,3 +523,85 @@ Ici le nom d'utilisateur est "wilder" et le nom du serveur est "srvlx01", comme 
 ### **Voilà, vous avez connecté le client Linux au serveur Linux !**
  
 ---
+
+## Bonus : Se déconnecter du serveur.
+
+- Taper `logout` ou `exit` ou encore appuyer sur CTRL + D pour se déconnecter du serveur depuis le client.
+- On constate bien que le nom de la machine a changé et que vous êtes revenu sur la machine client "ubu01".
+
+---
+---
+
+## B. Création d'une clé SSH  
+
+Vous pouvez générer une clé SSH entre le client et le serveur, ici entre "ubu01" et "srvlx01" pour ne pas avoir à rentrer le mot de passe à chaque fois et que le lien entre les deux machines soit solide.  
+
+---
+
+- Rester dans la même session du Terminal et entrer la ligne de commande `ssh-keygen -t ed25519` (Vous pouvez ajouter l'option de nommer la clé SSH avec l'argument `-C` et le nom que vous souhaitez à la suite de la ligne de commande. Par exemple `ssh-keygen -t ed25519 -C "utilisateur@entreprise.fr"`
+
+
+
+---
+
+- Appuyer sur Entrée, le début du processus de génération commence.
+- Saisissez le fichier dans lequel enregistrer la clé (comme indiqué ici en anglais). Pour ma part, le chemin du fichier proposé me convient bien donc j'appuie sur Entrée.
+
+
+
+---
+
+- Saisissez une phrase secrète si vous en souhaitez une pour plus de sécurité et confirmez-la.
+- Après avoir validé, on constate bien que la clé a été générée.
+
+
+
+---
+
+- Mettez en marche la machine serveur en même temps donc "srvlx01" et connectez-vous.
+- Après cela, revenez sur ubu01 et entrer la ligne de commande `ssh-copy-id nom_utilisateur@adresse_ip_ou_nom_du_serveur` pour lier et sécuriser la clé SSH nouvellement créée à votre machine serveur (ici, `wilder@srvlx01`). 
+
+
+
+---
+
+- Entrer ensuite le mot de passe de "srvlx01" et valider.
+- On constate bien qu'une clé a été ajoutée !
+
+
+
+---
+
+- Reconnecter vous pour pouvoir constater que la clé SSH saisie a bien été ajoutée avec la ligne de commande suivante : `ssh nom_utilisateur@adresse_ip_ou_nom_du_serveur` (ici toujours `wilder@srvlx01`).
+- On constate bien que vous n'avez pas eu besoin d'entrer un mot de passe avec le changement nom de machine à côté du `@` !
+
+
+
+
+### Voilà, vous avez généré une clé SSH avec la machine serveur !
+
+---
+
+## Bonus : Se déconnecter du serveur.
+
+- Taper `logout` ou `exit` ou encore appuyer sur CTRL + D pour se déconnecter du serveur depuis le client.
+- On constate bien que le nom de la machine a changé et que vous êtes revenu sur la machine client "ubu01".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
