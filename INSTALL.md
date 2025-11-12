@@ -55,7 +55,7 @@ Assurez-vous que chaque machine possède :
 - OpenSSH Client (généralement préinstallé)
 - TightVNC Viewer ou Remmina (pour VNC vers Windows Server)
 
---
+
 
 # 2. Installation sur Windows Server 2022
 
