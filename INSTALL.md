@@ -206,7 +206,7 @@ Dans cette section nous allons ajouter un utilisateur au groupe Remote Desktop U
 
 ![image URL](https://github.com/anis13013/projet-1/blob/main/CONFIG%20ASSISTANCE/06_assistance_config.png?raw=true)
  
-
+---
 ---
 
 # III. Installation sur Debian (Serveur)
@@ -216,7 +216,8 @@ Dans cette section nous allons ajouter un utilisateur au groupe Remote Desktop U
 
 
 
-
+---
+---
 
 # IV. Installation et sur Windows 11 (Client)
 
@@ -464,8 +465,10 @@ Dans cette section nous allons ajouter un utilisateur au groupe Remote Desktop U
   
 
 ### **Voilà, vous avez connecté le client Linux au serveur Windows !**   
----
 
+
+---
+---
 
 
 ## 2. Mise en place du serveur SSH
@@ -551,7 +554,7 @@ Ici le nom d'utilisateur est "wilder" et le nom du serveur est "srvlx01", comme 
 - Taper `logout` ou `exit` ou encore appuyer sur CTRL + D pour se déconnecter du serveur depuis le client.
 - On constate bien que le nom de la machine a changé et que vous êtes revenu sur la machine client "ubu01".
 
-
+![Image10](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/10_OpenSSH_Client_Linux.png)
 
 ---
 ---
@@ -565,42 +568,42 @@ Vous pouvez générer une clé SSH entre le client et le serveur, ici entre "ubu
 
 - Rester dans la même session du Terminal et entrer la ligne de commande `ssh-keygen -t ed25519` (Vous pouvez ajouter l'option de nommer la clé SSH avec l'argument `-C` et le nom que vous souhaitez à la suite de la ligne de commande. Par exemple `ssh-keygen -t ed25519 -C "utilisateur@entreprise.fr"`
 
-
+![Image11](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/11_OpenSSH_Client_Linux.png)
 
 ---
 
 - Appuyer sur Entrée, le début du processus de génération commence.
 - Saisissez le fichier dans lequel enregistrer la clé (comme indiqué ici en anglais). Pour ma part, le chemin du fichier proposé me convient bien donc j'appuie sur Entrée.
 
-
+![Image12](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/12_OpenSSH_Client_Linux.png)
 
 ---
 
 - Saisissez une phrase secrète si vous en souhaitez une pour plus de sécurité et confirmez-la.
 - Après avoir validé, on constate bien que la clé a été générée.
 
-
+![Image13](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/13_OpenSSH_Client_Linux.png)
 
 ---
 
 - Mettez en marche la machine serveur en même temps donc "srvlx01" et connectez-vous.
 - Après cela, revenez sur ubu01 et entrer la ligne de commande `ssh-copy-id nom_utilisateur@adresse_ip_ou_nom_du_serveur` pour lier et sécuriser la clé SSH nouvellement créée à votre machine serveur (ici, `wilder@srvlx01`). 
 
-
+![Image14](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/14_OpenSSH_Client_Linux.png)
 
 ---
 
 - Entrer ensuite le mot de passe de "srvlx01" et valider.
 - On constate bien qu'une clé a été ajoutée !
 
-
+![Image15](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/15_OpenSSH_Client_Linux.png)
 
 ---
 
 - Reconnecter vous pour pouvoir constater que la clé SSH saisie a bien été ajoutée avec la ligne de commande suivante : `ssh nom_utilisateur@adresse_ip_ou_nom_du_serveur` (ici toujours `wilder@srvlx01`).
 - On constate bien que vous n'avez pas eu besoin d'entrer un mot de passe avec le changement nom de machine à côté du `@` !
 
-
+![Image16](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/16_OpenSSH_Client_Linux.png)
 
 
 ### **Voilà, vous avez généré une clé SSH avec la machine serveur !**
@@ -612,7 +615,7 @@ Vous pouvez générer une clé SSH entre le client et le serveur, ici entre "ubu
 - Taper `logout` ou `exit` ou encore appuyer sur CTRL + D pour se déconnecter du serveur depuis le client.
 - On constate bien que le nom de la machine a changé et que vous êtes revenu sur la machine client "ubu01".
 
-
+![Image17](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/17_OpenSSH_Client_Linux.png)
 
 
 
