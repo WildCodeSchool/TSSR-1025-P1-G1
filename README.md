@@ -64,8 +64,10 @@ Les objectifs finaux de ce projet sont :
 
 **Logiciels**
 - TightVNCServer pour la machine serveur Windows
+- RDP (déjà intégré à l'OS) pour la machine serveur Windows
 - OpenSSHServer (suite logicielle -> déjà intégrée à l'OS) pour la machine serveur Linux
 - TightVNCViewer pour la machine client Windows
+- RDP (déjà intégré à l'OS) pour la machine client Windows
 - PuTTY pour la machine client Windows
 - TightVNCViewer pour la machine client Ubuntu
 - OpenSSHClient pour la machine client Ubuntu
