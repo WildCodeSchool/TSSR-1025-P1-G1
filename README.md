@@ -41,27 +41,34 @@ Les objectifs finaux de ce projet sont :
 
 | Membre     | Rôle       | Missions |
 | ---------- | ---------- | -------- |
-|  Anis      | Technicien | Mise en place des serveurs, documentation des serveurs      |
-|  Christian | SM         | Mise en place Windows Client, documentation Windows Client  |
-|  Sami      | PO         | Mise en place de Linux Client, documentation Linux Client   | 
+| Christian  | SM         | Mise en place des serveurs, documentation des serveurs      |
+| Sami       | PO         | Mise en place Windows Client, documentation Windows Client  |
+| Anis       | Technicien | Mise en place de Linux Client, documentation Linux Client   | 
 
 
 **Sprint 2**
 
 | Membre     | Rôle       | Missions |
 | ---------- | ---------- | -------- |
-| Anis       |         | -        |
-| Christian  |            | -        |
-| Sami       |            | -        |
+| Sami       | SM         | - Documentation de Linux Client sur USER_GUIDE.md & INSTALL.md |
+| Anis       | PO         | - Documentation des Serveurs (Windows & Linux) sur USER_GUIDE.md & INSTALL.md |
+| Christian  | Technicien | - Documentation de Windows Client sur USER_GUIDE.md & INSTALL.md |
 
 # ⚙️ Choix techniques
 <span id="choix-techniques"></span>
 **Matériel**
+- Une machine virtuel avec le système d'exploitation Windows Server 2022
+- Une machine virtuel avec le système d'exploitation Debian 13.1 CLI (en interface de ligne de commande)
+- Une machine virtuel avec le système d'exploitation Windows 10/11
+- Une machine virtuel avec le système d'exploitation Ubuntu LTS 24.04
 
-
-
-**Logiciel**
-
+**Logiciels**
+- TightVNCServer pour la machine serveur Windows
+- OpenSSHServer (suite logicielle -> déjà intégrée à l'OS) pour la machine serveur Linux
+- TightVNCViewer pour la machine client Windows
+- PuTTY pour la machine client Windows
+- TightVNCViewer pour la machine client Ubuntu
+- OpenSSHClient pour la machine client Ubuntu
 
 # 🧗 Difficultés rencontrées
 <span id="difficultes-rencontrees"></span>
