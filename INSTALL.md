@@ -88,7 +88,7 @@ Télécharger TightVNC : https://www.tightvnc.com/download/2.8.85/tightvnc-2.8.8
 - Lancez l'exécutable
 - Cliquez sur "Next" pour poursuivre l'installation
 
-![image URL](https://github.com/anis13013/projet-1/blob/main/TightVNC%20Install/01_InstallVNC.png?raw=true)
+![image URL](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Serveur_Windows/TightVNC/01_InstallVNC.png?raw=true)
 
 ---  
 ### Etape 3 :   Accepter la licence et choisir le type d’installation
@@ -96,7 +96,7 @@ Télécharger TightVNC : https://www.tightvnc.com/download/2.8.85/tightvnc-2.8.8
 - Cochez la case : "I accept the terms in the License Agreement"
 - Choisissez le type d'installation en "Typical"
 
-![image URL](https://github.com/anis13013/projet-1/blob/main/TightVNC%20Install/02_InstallVNC.png?raw=true)
+![image URL](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Serveur_Windows/TightVNC/02_InstallVNC.png?raw=true)
 
 ---  
 ### Etape 4 :   Vérifier les options avant l’installation
@@ -104,7 +104,7 @@ Télécharger TightVNC : https://www.tightvnc.com/download/2.8.85/tightvnc-2.8.8
 - Vérifiez que les cases "Associate .vnc files with TightVNC Viewer, Register TightVNC Server as a system service & Configure system to allow services simulate Ctrl-Alt-Del" sont bien cochées. 
 - Cliquez ensuite sur "Install".
 
-![image URL](https://github.com/anis13013/projet-1/blob/main/TightVNC%20Install/03_InstallVNC.png?raw=true)
+![image URL](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Serveur_Windows/TightVNC/03_InstallVNC.png?raw=true)
 
 ---  
 ### Etape 5 :   Configurer la sécurité de TightVNC
@@ -113,7 +113,7 @@ Télécharger TightVNC : https://www.tightvnc.com/download/2.8.85/tightvnc-2.8.8
 - Saisissez des mots de passe différents pour le Remote Access et pour l’Administrative Access.
 - Vérifiez dans les icones cachés si TightVNC est bien lancé.
 
-![image URL](https://github.com/anis13013/projet-1/blob/main/TightVNC%20Install/04_InstallVNC.png?raw=true)  
+![image URL](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Serveur_Windows/TightVNC/04_InstallVNC.png?raw=true)  
 
 ---  
 ---  
@@ -128,7 +128,7 @@ Télécharger TightVNC : https://www.tightvnc.com/download/2.8.85/tightvnc-2.8.8
 - Sur le bureau, dans la barre de recherche, tapez "Control Panel"  
 - Cliquez sur l'application "System and Security" 
 
-![image URL](https://github.com/anis13013/projet-1/blob/main/RDP/01_ConfigRDP.png?raw=true)
+![image URL](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Serveur_Windows/RDP/RDP/01_ConfigRDP.png?raw=true)
 
 ---  
 ### Etape 2 :   Accéder aux paramètres de Remote Desktop
@@ -137,7 +137,7 @@ Télécharger TightVNC : https://www.tightvnc.com/download/2.8.85/tightvnc-2.8.8
 - Une nouvelle fenêtre s’ouvre. Selon votre résolution, recherchez "Remote Desktop" dans la page "About", il peut se trouver à droite ou en bas de la page. 
 - Cliquez dessus.
 
-![image URL](https://github.com/anis13013/projet-1/blob/main/RDP/02_ConfigRDP.png?raw=true)
+![image URL](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Serveur_Windows/RDP/RDP/02_ConfigRDP.png?raw=true)
 
 ---  
 ### Etape 3 :   Activer Remote Desktop
@@ -145,7 +145,7 @@ Télécharger TightVNC : https://www.tightvnc.com/download/2.8.85/tightvnc-2.8.8
 - Cliquez sur le bouton "Enable Remote Desktop"
 - Acceptez l’autorisation en cliquant sur "Confirm"    
 
-![image URL](https://github.com/anis13013/projet-1/blob/main/RDP/03_ConfigRDP.png?raw=true)
+![image URL](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Serveur_Windows/RDP/RDP/03_ConfigRDP.png?raw=true)
 
 ---  
 ### Etape 4 :   Remote Desktop activé
@@ -153,7 +153,7 @@ Télécharger TightVNC : https://www.tightvnc.com/download/2.8.85/tightvnc-2.8.8
 
 - Le Bureau à distance activé, le poste est prêt à accepter les connexions distantes, permettant aux utilisateurs autorisés d’accéder au système de manière sécurisée.
 
-![image URL](https://github.com/anis13013/projet-1/blob/main/RDP/04_ConfigRDP.png?raw=true)
+![image URL](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Serveur_Windows/RDP/RDP/04_ConfigRDP.png?raw=true)
 
 ---  
 ---  
@@ -167,14 +167,14 @@ Dans cette section nous allons ajouter un utilisateur au groupe Remote Desktop U
 - Tapez "compmgmt.msc"
 - Cliquez sur OK
 
-![image URL](https://github.com/anis13013/projet-1/blob/main/CONFIG%20ASSISTANCE/01_assistance_config.png?raw=true)
+![image URL](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Serveur_Windows/Config_Assistance/01_assistance_config.png?raw=true)
 ---  
 ### Etape 2
 
 - Cliquez sur Local Users & Groups
 - Cliquez sur Users
 
-![image URL](https://github.com/anis13013/projet-1/blob/main/CONFIG%20ASSISTANCE/02_assistance_config.png?raw=true)
+![image URL](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Serveur_Windows/Config_Assistance/02_assistance_config.png?raw=true)
 ---  
 ### Etape 3
 
@@ -182,7 +182,7 @@ Dans cette section nous allons ajouter un utilisateur au groupe Remote Desktop U
 - Tapez Wilder-Assistance
 - Cliquez sur Create 
 
-![image URL](https://github.com/anis13013/projet-1/blob/fd3c8f0708c9b3cbe0cd0bad022c13d58e9431d3/CONFIG%20ASSISTANCE/03_assistance_config.png)
+![image URL](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Serveur_Windows/Config_Assistance/03_assistance_config.png?raw=true)
 ---  
 ### Etape 4
 
@@ -190,7 +190,7 @@ Dans cette section nous allons ajouter un utilisateur au groupe Remote Desktop U
 - Tapez Wilder-Assistance
 - Cliquez sur Create.
 
-![image URL](https://github.com/anis13013/projet-1/blob/main/CONFIG%20ASSISTANCE/04_assistance_config.png?raw=true)
+![image URL](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Serveur_Windows/Config_Assistance/04_assistance_config.png?raw=true)
 ---  
 ### Etape 5
 
@@ -198,13 +198,13 @@ Dans cette section nous allons ajouter un utilisateur au groupe Remote Desktop U
 - Cliquez sur Check Names. Si aucune erreur de frappe ou utilisateur inexistant n’est détecté, vous verrez un aperçu comme ceci : "Fromthislocation\User"
  correspond au nom de la machine et User à l’utilisateur nécessitant les droits.
 - Cliquez sur OK.
-![image URL](https://github.com/anis13013/projet-1/blob/main/CONFIG%20ASSISTANCE/05_assistance_config.png?raw=true)
+![image URL](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Serveur_Windows/Config_Assistance/05_assistance_config.png?raw=true)
 ---  
 ### Etape 6
 
 - Cliquez sur Apply
 
-![image URL](https://github.com/anis13013/projet-1/blob/main/CONFIG%20ASSISTANCE/06_assistance_config.png?raw=true)
+![image URL](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Serveur_Windows/Config_Assistance/06_assistance_config.png?raw=true)
  
 ---
 ---
