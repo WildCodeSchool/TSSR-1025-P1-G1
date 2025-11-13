@@ -566,7 +566,7 @@ Vous pouvez générer une clé SSH entre le client et le serveur, ici entre "ubu
 
 ---
 
-- Rester dans la même session du Terminal et entrer la ligne de commande `ssh-keygen -t ed25519` (Vous pouvez ajouter l'option de nommer la clé SSH avec l'argument `-C` et le nom que vous souhaitez à la suite de la ligne de commande. Par exemple `ssh-keygen -t ed25519 -C "utilisateur@entreprise.fr"`.
+- Rester dans la même session du Terminal et entrer la ligne de commande `ssh-keygen -t ed25519` (Vous pouvez ajouter l'option de nommer la clé SSH avec l'argument `-C` et le nom que vous souhaitez à la suite de la ligne de commande. Par exemple `ssh-keygen -t ed25519 -C "utilisateur@entreprise.fr"`.  
   Appuyer ensuite sur Entrée, le début du processus de génération de clé commencera.
 - Saisissez par la suite le fichier dans lequel enregistrer la clé (comme indiqué ici en anglais). Pour ma part, le chemin du fichier proposé me convient bien donc j'appuie sur Entrée.
 
@@ -595,7 +595,7 @@ Vous pouvez générer une clé SSH entre le client et le serveur, ici entre "ubu
 
 ---
 
-- Reconnecter vous pour pouvoir constater que la clé SSH saisie a bien été ajoutée avec la ligne de commande suivante : `ssh nom_utilisateur@adresse_ip_ou_nom_du_serveur` (ici toujours `wilder@srvlx01`).
+- Reconnectez-vous pour pouvoir constater que la clé SSH saisie a bien été ajoutée avec la ligne de commande suivante : `ssh nom_utilisateur@adresse_ip_ou_nom_du_serveur` (ici toujours `wilder@srvlx01`).
 - On constate bien que vous n'avez pas eu besoin d'entrer un mot de passe avec le changement nom de machine à côté du `@` !
 
 ![Image15](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/15_OpenSSH_Client_Linux.png)
