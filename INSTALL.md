@@ -13,17 +13,17 @@ II. [Installation sur Windows Server 2022](#II-installation-sur-windows-server-2
    - [2. RDP](#22-rdp)  
    - [3. Configuration Assistance](#23-configuration-assistance)
 
-III. [Installation sur Debian 13](#3-installation-sur-debian-13)  
+III. [Installation sur Debian 13](#III-installation-sur-debian-13)  
 
-IV. [Installation sur Windows 11 (Client)](#4-installation-sur-windows-11-client)  
-   - [1. PuTTY](#41-putty)  
+IV. [Installation sur Windows 11 (Client)](#IV-installation-sur-windows-11-client)  
+   - [1. PuTTY](#IV1-putty)  
       - [A. Téléchargement de PuTTY](#411-téléchargement-de-putty)  
       - [B. Installation de PuTTY](#412-installation-de-putty)  
    - [2. TightVNC](#42-tightvnc)  
       - [A. Téléchargement de TightVNC](#421-téléchargement-de-tightvnc)  
       - [B. Installation de TightVNC](#422-installation-de-tightvnc)
 
-V. [Installation sur Ubuntu 24.04 (Client)](#5-installation-sur-ubuntu-2404-client)  
+V. [Installation sur Ubuntu 24.04 (Client)](#V-installation-sur-ubuntu-2404-client)  
    - [1. Installation de TightVNC](#51-installation-de-tightvnc)  
    - [2. Mise en place du serveur SSH](#52-mise-en-place-du-serveur-ssh)  
       - [A. Installation d'OpenSSH et première connexion](#521-installation-openssh-et-première-connexion)  
