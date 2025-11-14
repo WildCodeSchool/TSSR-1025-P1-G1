@@ -26,7 +26,7 @@ IV. [Installation sur Windows 11 (Client)](#IV-installation-sur-windows-11-clien
 V. [Installation sur Ubuntu 24.04 (Client)](#V-installation-sur-ubuntu-2404-client)  
    - [1. Installation de TightVNC](#1-installation-de-tightvnc)  
    - [2. Mise en place du serveur SSH](#2-mise-en-place-du-serveur-ssh)  
-      - [A. Installation d'OpenSSH et première connexion](#a-installation-d'openssh-et-première-connexion)  
+      - [A. Installation d'OpenSSH et première connexion](#a-installation-d-openssh-et-première-connexion)  
       - [B. Création d'une clé SSH](#b-création-clé-ssh)
 
 VI. [FAQ et Dépannage](#VI-faq-et-dépannage)  
