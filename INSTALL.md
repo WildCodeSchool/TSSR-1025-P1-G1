@@ -8,7 +8,7 @@ Ce document décrit l'installation et la configuration des outils d'administrati
 # Table des Matières
 I. [Prérequis Techniques](#1-prérequis-techniques)  
 
-II. [Installation sur Windows Server 2022](#2-installation-sur-windows-server-2022)  
+II. [Installation sur Windows Server 2022](#II-installation-sur-windows-server-2022)  
    - [1. TightVNC](#21-tightvnc)  
    - [2. RDP](#22-rdp)  
    - [3. Configuration Assistance](#23-configuration-assistance)
