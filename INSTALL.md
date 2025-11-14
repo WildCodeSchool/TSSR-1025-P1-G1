@@ -17,17 +17,17 @@ III. [Installation sur Debian 13](#III-installation-sur-debian-13)
 
 IV. [Installation sur Windows 11 (Client)](#IV-installation-sur-windows-11-client)  
    - [1. PuTTY](#1-putty)  
-      - [A. Téléchargement de PuTTY](#A-téléchargement-de-putty)  
-      - [B. Installation de PuTTY](#B-installation-de-putty)  
+      - [A. Téléchargement de PuTTY](#a-téléchargement-de-putty)  
+      - [B. Installation de PuTTY](#b-installation-de-putty)  
    - [2. TightVNC](#2-tightvnc)  
-      - [A. Téléchargement de TightVNC](#A-téléchargement-de-tightvnc)  
-      - [B. Installation de TightVNC](#B-installation-de-tightvnc)
+      - [A. Téléchargement de TightVNC](#a-téléchargement-de-tightvnc)  
+      - [B. Installation de TightVNC](#b-installation-de-tightvnc)
 
 V. [Installation sur Ubuntu 24.04 (Client)](#V-installation-sur-ubuntu-2404-client)  
    - [1. Installation de TightVNC](#1-installation-de-tightvnc)  
    - [2. Mise en place du serveur SSH](#2-mise-en-place-du-serveur-ssh)  
-      - [A. Installation d'OpenSSH et première connexion](#A-installation-openssh-et-première-connexion)  
-      - [B. Création d'une clé SSH](#B-création-clé-ssh)
+      - [A. Installation d'OpenSSH et première connexion](#a-installation-openssh-et-première-connexion)  
+      - [B. Création d'une clé SSH](#b-création-clé-ssh)
 
 VI. [FAQ et Dépannage](#VI-faq-et-dépannage)  
 
