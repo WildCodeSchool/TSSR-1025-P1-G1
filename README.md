@@ -56,27 +56,75 @@ Les objectifs finaux de ce projet sont :
 
 # ⚙️ Choix techniques
 <span id="choix-techniques"></span>
-**Matériel**
-- Une machine virtuel avec le système d'exploitation Windows Server 2022
-- Une machine virtuel avec le système d'exploitation Debian 13.1 CLI (en interface de ligne de commande)
-- Une machine virtuel avec le système d'exploitation Windows 10/11
-- Une machine virtuel avec le système d'exploitation Ubuntu LTS 24.04
+## **Matériels Serveurs**
 
-**Logiciels**
-- TightVNCServer pour la machine serveur Windows
-- RDP (déjà intégré à l'OS) pour la machine serveur Windows
-- OpenSSHServer (suite logicielle -> déjà intégrée à l'OS) pour la machine serveur Linux
-- TightVNCViewer pour la machine client Windows
-- RDP (déjà intégré à l'OS) pour la machine client Windows
-- PuTTY pour la machine client Windows
-- TightVNCViewer pour la machine client Ubuntu
-- OpenSSHClient pour la machine client Ubuntu
+**Serveur Debian :**
+- Nom : **SRVLX01**
+- OS : **Debian 13.1.0 CLI**
+- Compte utilisateur :  **Root** / **Wilder**
+- Mot de passe : **Azerty1***
+- IP : **172.16.10.5**
+- Masque : **255.255.255.0**
+
+**Serveur Windows :**
+  - Nom : **SRVWIN01**
+  - OS : **Windows server 2022**
+  - Compte utilisateur :  **Administrator** / **Wilder**
+  - Mot de passe : **Azerty1***
+  - IP & Masque : **172.16.10.5**
+  - Masque : **255.255.255.0**
+
+## **Matériels Clients**
+
+**Client Ubuntu :**
+- Nom : **UBU01**
+- OS : **Ubuntu 24.04 LTS**
+- Compte utilisateur : **Wilder**
+- Mot de passe : **Azerty1***
+- IP : **172.16.10.20**
+- Masque : **255.255.255.0**
+
+**Client Windows :**
+- Nom : **WIN01**
+- OS : **Windows 11 Pro**
+- Compte utilisateur : **Wilder**
+- Mot de passe : **Azerty1***
+- IP : **172.16.10.10**
+- Masque : **255.255.255.0**
+
+
+
+## **Logiciels**
+ 
+- Serveur Windows : **TightVNCServer - RDP (intégré à l'OS)**
+
+- Serveur Debian : **OpenSSHServer (intégrer à l'OS, mais non installé par défaut — installation requise au premier démarrage)** 
+
+- Client Windows : **TightVNCViewer - RDP (intégré à l'OS) - PuTTY**
+
+- Client Ubuntu : **TightVNCViewer - OpenSSHClient**
 
 # 🧗 Difficultés rencontrées
 <span id="difficultes-rencontrees"></span>
+- Génération par clé SSH.
+  
+- Transfert de fichier SSH.
+
+- Choix d'un VNC facile d'utilisation & gratuit.
 
 # 💡 Solutions trouvées
 <span id="solutions-trouvees"></span>
+- Utilisation de TightVNC : via ce [lien](https://www.malekal.com/configurer-utiliser-vnc-controle-distance-pc/)
+  
 
 # 🚀 Améliorations possibles
 <span id="ameliorations-possibles"></span>
+
+- Monitoring réseau, surveillance des connexions.
+
+- Authentification multi-facteurs MFA Windows, pour renforcer la sécurité d'accès.
+
+- Tunnel SSH pour VNC, chiffrement supplémentaire des flux VNC via tunnel SSH.
+
+- D'autres logiciels de téléassistances sont disponibles, via ce [lien](https://vnc.fr.softonic.com/windows/alternatives) gratuits et payants, TightVNC est classé 2éme.
+  
