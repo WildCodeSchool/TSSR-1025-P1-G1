@@ -13,17 +13,10 @@ depuis les postes clients (Windows 11 et Ubuntu 24.04).
 
 1. [Client Windows 11](#1-client-windows-11)
    - [1.1 Utilisation de base de PuTTY](#11-utilisation-de-base-de-putty)
-     - [1.1.1 Se connecter à un serveur SSH](#111-se-connecter-à-un-serveur-ssh)
    - [1.2 Utilisation avancée de PuTTY](#12-utilisation-avancée-de-putty)
-     - [1.2.1 Sauvegarder les connexions distantes](#121-sauvegarder-les-connexions-distantes)
-     - [1.2.2 Personnaliser l'apparence](#122-personnaliser-lapparence)
    - [1.3 Utilisation de base de TightVNC Viewer](#13-utilisation-de-base-de-tightvnc-viewer)
-     - [1.3.1 Se connecter à un serveur VNC](#131-se-connecter-à-un-serveur-vnc)
    - [1.4 Utilisation avancée de TightVNC Viewer](#14-utilisation-avancée-de-tightvnc-viewer)
-     - [1.4.1 Sauvegarde d'une session TightVNC](#141-sauvegarde-dune-session-tightvnc)
-     - [1.4.2 Transfert de fichier](#142-transfert-de-fichier-démonstration-avec-la-création-dun-dossier)
    - [1.5 Utilisation du Bureau à distance (RDP)](#15-utilisation-du-bureau-à-distance-rdp)
-     - [1.5.1 Se connecter à Windows Server](#151-se-connecter-à-windows-server)
 2. [Client Ubuntu 24.04](#2-client-ubuntu-2404)
 
 ---
