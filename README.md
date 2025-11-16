@@ -7,7 +7,6 @@
 ## Sommaire 
 
 - [🎯 Présentation du projet](#presentation-du-projet)
-- [📜 Introduction](#introduction)
 - [👥 Membres du groupe par sprint](#membres-du-groupe-par-sprint)
 - [⚙️ Choix Techniques](#choix-techniques)
 - [🧗Difficultés rencontrées](#difficultes-rencontrees)
@@ -31,9 +30,6 @@ Les objectifs finaux de ce projet sont :
 
  - 2 : La création d'un groupe local "Assistance" sur le client Windows pour la prise de contrôle à distance
  - 3 : La sécurisation d'une connexion SSH 
-
-# 📜 Introduction
-<span id="introduction"></span>
 
 # 👥 Membres du groupe par sprint
 <span id="membres-du-groupe-par-sprint"></span>
