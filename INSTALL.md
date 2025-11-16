@@ -211,10 +211,37 @@ Dans cette section nous allons ajouter un utilisateur au groupe Remote Desktop U
 
 # III. Installation sur Debian (Serveur)
 
+Pour la machine serveur Linux Debian, ici appelée "srvlx01", nous allons vérifier si la suite logicielle OpenSSH est bien installée et si le service SSH est bien activé pour les connexions via OpenSSH et PuTTY.
 
+---
 
+Mettre en route la machine serveur Linux (Debian), ici nommée "srvlx01".
 
+- Se connecter en tant qu'administrateur et entrer son mot de passe.
 
+![Image04](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/04_OpenSSH_Client_Linux.png)
+
+---
+
+- Vérifier si l'OS est à jour avec la ligne de commande `apt install update && apt upgrade`. (Ce dernier est à jour dans le cas présent.)
+
+![Image05](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/05_OpenSSH_Client_Linux.png)
+
+---
+
+- Installer le serveur OpenSSH avec la commande `apt install openssh-server`. Si ça n'a pas été fait au moment de l'installation de l'OS.
+
+![Image06](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/06_OpenSSH_Client_Linux.png)
+
+---
+
+- Vérifier le statut de la connexion SSH avec la commande `systemctl status ssh`.
+
+- S'il n'est pas actif comme indiqué dans les lignes "Loaded" (2x "enabled" en vert) et "Active" ("active (running)" en vert), entrer les commandes à la suite les commandes `systemctl start ssh` et `systemctl enabled ssh` pour activer le service SSH.
+
+![Image07](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/07_OpenSSH_Client_Linux.png)
+
+### Voilà, les vérifications sont terminées !
 
 ---
 ---
@@ -518,13 +545,13 @@ Dans cette section nous allons ajouter un utilisateur au groupe Remote Desktop U
 
 ---
 
-- Installer le serveur OpenSSH avec la commande `apt install openssh-server`.
+- Installer le serveur OpenSSH avec la commande `apt install openssh-server`. Si ça n'a pas été fait au moment de l'installation de l'OS.
 
 ![Image06](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/06_OpenSSH_Client_Linux.png)
 
 ---
 
-- Vérifier le statut d'OpenSSH avec la commande `systemctl status ssh`.
+- Vérifier le statut de la connexion SSH avec la commande `systemctl status ssh`.
 
 - S'il n'est pas actif comme indiqué dans les lignes "Loaded" (2x "enabled" en vert) et "Active" ("active (running)" en vert), entrer les commandes à la suite les commandes `systemctl start ssh` et `systemctl enabled ssh` pour activer le service SSH.
 
