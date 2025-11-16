@@ -48,6 +48,7 @@ depuis les postes clients (Windows 11 et Ubuntu 24.04).
 ![Sceenshot - Utilisation PuTTY](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_USER_GUIDE/Client_Windows/PuTTY/01_basic_use/03_putty_basic_utilisation.png)    
 
 ---
+---
 
 ### 1.2 Utilisation avancée de PuTTY
 
@@ -124,6 +125,7 @@ depuis les postes clients (Windows 11 et Ubuntu 24.04).
 ![Sceenshot - TightVNC](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_USER_GUIDE/Client_Windows/VNC/01_basic_use/02_vnc_basic_utilisation.png)   
 
 ---  
+---
 
 ### 1.4 Utilisation avancée de TightVNC Viewer
 
@@ -171,7 +173,8 @@ depuis les postes clients (Windows 11 et Ubuntu 24.04).
 
 ![Screenshot - TightVNC](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_USER_GUIDE/Client_Windows/VNC/02_advanced_use/02_files_transfer/03_vnc_advanced_utilisation_file_transfer.png)
 
----  
+---
+---
 
 ### 1.5 Utilisation du Bureau à distance (RDP)
 
@@ -200,7 +203,68 @@ depuis les postes clients (Windows 11 et Ubuntu 24.04).
 ![Screenshot - RDP](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_USER_GUIDE/Client_Windows/RDP/01_basic_use/03_rdp_basic_utilisation.png)  
 
 ---
+---
 
 ## 2. Client Ubuntu 24.04
 
+### 2.1 Utilisation de base de TightVNC
+
+- Allumer votre machine client Linux Ubuntu, ici appelée "ubu01", et en parallèle votre machine serveur Windows, ici appelée "srvwin01".
+
+
+
 ---
+
+- Rendez-vous dans le Terminal d'Ubuntu et taper ensuite la ligne de commande `vncviewer srvwin01` pour ouvrir le logiciel TightVNCViewer sur votre serveur (`srvwin01` étant le nom attribué à la machine serveur sur votre machine client mais vous auriez pu bien évidemment mettre l'adresse IP du serveur à la place).
+
+- Taper le mot de passe choisi au préalable sur le serveur VNC sur la machine serveur Windows.
+
+![Image01]()
+
+---
+
+- Une fenêtre se lance : "TightVNC : srvwin01".
+
+- Regarder simultanément les écrans de "ubu01" et "srvwin01".
+
+![Image02]()   
+
+
+### Vous voilà connecté !
+
+---
+Bonus : Pour vous déconnecter de "srvwin01", il vous suffit d'appuyer sur la croix de la fenêtre lancée.   
+
+---
+---
+
+### 2.2. Utilisation de Base d'OpenSSH
+
+- Allumer votre machine client Linux Ubuntu, ici appelée "ubu01", et en parallèle votre machine serveur Linux Debian, ici appelée "srvlx01", en vous connectant sur votre compte utilisateur.
+
+- Rendez-vous dans le Terminal d'Ubuntu et taper ensuite la ligne de commande ssh suivante  
+`nom_utilisateur@adresse_ip_ou_nom_du_serveur` (ici wilder@srvlx01) pour ouvrir la suite logicielle OpenSSH sur votre serveur (`srvlx01` étant le nom attribué à la machine serveur sur votre machine client mais vous auriez pu bien évidemment mettre l'adresse IP du serveur à la place).  
+Normalement, vous n'avez pas besoin d'entre le mot de passe du serveur car vous avez préalablement générer un clé SSH conformément aux instructions du fichier INSTALL.
+
+
+
+### Vous voilà connecté !
+
+---
+
+- Pour vous déconnecter, il vous suffit simplement de taper la ligne de commande `logout` dans le Terminal.
+
+
+
+---
+---
+
+2.3. Utilisation avancée d'OpenSSH  
+
+Nous allons maintenant voir comment transférer un fichier d'une machine Client Linux Ubuntu, ici, appelée "ubu01" à une machine Serveur Linux Debian, ici appelée "srvlx01". Et comment en récupérer un du serveur Linux ("srvlx01") au client Linux ("ubu01") depuis le Terminal du client Linux ("ubu01").
+
+---
+- Mettez en route vos deux machines Linux simultanément (Client et Serveur).
+
+
+
