@@ -106,9 +106,7 @@ Les objectifs finaux de ce projet sont :
 
 # 🧗 Difficultés rencontrées
 <span id="difficultes-rencontrees"></span>
-- Génération par clé SSH.
-  
-- Transfert de fichier SSH.
+- Transfert de fichier crossplateforme sur le logiciel TightVNC 
 
 - Choix d'un VNC facile d'utilisation & gratuit.
 
