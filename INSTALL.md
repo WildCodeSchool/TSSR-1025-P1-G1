@@ -29,8 +29,6 @@ V. [Installation sur Ubuntu 24.04 (Client)](#V-installation-sur-ubuntu-2404-clie
       - [A. Installation d'OpenSSH et première connexion](#a-installation-d-openssh-et-première-connexion)  
       - [B. Création d'une clé SSH](#b-création-clé-ssh)
 
-VI. [FAQ et Dépannage](#VI-faq-et-dépannage)  
-
 ---
 
 # I. Prérequis Techniques
