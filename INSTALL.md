@@ -645,11 +645,6 @@ Vous pouvez générer une clé SSH entre le client et le serveur, ici entre "ubu
 ---
 
 
-# VI. FAQ et Dépannage
-
-
-
-
 
 
 
