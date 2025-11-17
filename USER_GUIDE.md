@@ -19,8 +19,8 @@ depuis les postes clients (Windows 11 et Ubuntu 24.04).
    - [1.5 Utilisation du Bureau à distance (RDP)](#15-utilisation-du-bureau-à-distance-rdp)
 2. [Client Ubuntu 24.04](#2-client-ubuntu-2404)
    - [2.1 Utilisation de base de TightVNC Viewer](#21-utilisation-de-base-de-tightvnc-viewer)
-   - [2.2. Utilisation de base de OpenSSH](#22-utilisation-de-base-de-openssh)
-   - [2.3. Utilisation avancée de OpenSSH](#23-utilisation-avancée-de-openssh)
+   - [2.2 Utilisation de base de OpenSSH](#22-utilisation-de-base-de-openssh)
+   - [2.3 Utilisation avancée de OpenSSH](#23-utilisation-avancée-de-openssh)
    
 ---
 ---  
@@ -240,7 +240,7 @@ Bonus : Pour vous déconnecter de "srvwin01", il vous suffit d'appuyer sur la cr
 ---
 ---
 
-### 2.2. Utilisation de base de OpenSSH
+### 2.2 Utilisation de base de OpenSSH
 
 - Allumer votre machine client Linux Ubuntu, ici appelée "ubu01", et en parallèle votre machine serveur Linux Debian, ici appelée "srvlx01", en vous connectant sur votre compte utilisateur.
 
@@ -266,7 +266,7 @@ Normalement, vous n'avez pas besoin d'entre le mot de passe du serveur car vous 
 ---
 ---
 
-### 2.3. Utilisation avancée de OpenSSH  
+### 2.3 Utilisation avancée de OpenSSH  
 
 Nous allons maintenant voir comment transférer un fichier d'une machine Client Linux Ubuntu, ici, appelée "ubu01" à une machine Serveur Linux Debian, ici appelée "srvlx01". Et comment en récupérer un du serveur Linux ("srvlx01") au client Linux ("ubu01") depuis le Terminal du client Linux ("ubu01").
 
