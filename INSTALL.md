@@ -217,19 +217,19 @@ Mettre en route la machine serveur Linux (Debian), ici nommée "srvlx01".
 
 - Se connecter en tant qu'administrateur et entrer son mot de passe.
 
-![Image04](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/04_OpenSSH_Client_Linux.png)
+![Image01](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Serveur_Linux/01_Serveur_Linux_SSH.png)
 
 ---
 
 - Vérifier si l'OS est à jour avec la ligne de commande `apt install update && apt upgrade`. (Ce dernier est à jour dans le cas présent.)
 
-![Image05](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/05_OpenSSH_Client_Linux.png)
+![Image02](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Serveur_Linux/02_Serveur_Linux_SSH.png)
 
 ---
 
 - Installer le serveur OpenSSH avec la commande `apt install openssh-server`. Si ça n'a pas été fait au moment de l'installation de l'OS.
 
-![Image06](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/06_OpenSSH_Client_Linux.png)
+![Image03](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Serveur_Linux/03_Serveur_Linux_SSH.png)
 
 ---
 
@@ -237,7 +237,7 @@ Mettre en route la machine serveur Linux (Debian), ici nommée "srvlx01".
 
 - S'il n'est pas actif comme indiqué dans les lignes "Loaded" (2x "enabled" en vert) et "Active" ("active (running)" en vert), entrer les commandes à la suite les commandes `systemctl start ssh` et `systemctl enabled ssh` pour activer le service SSH.
 
-![Image07](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Client_Linux%20/OpenSSH/07_OpenSSH_Client_Linux.png)
+![Image04](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_INSTALL/Serveur_Linux/04_Serveur_Linux_SSH.png)
 
 ### Voilà, les vérifications sont terminées !
 
