@@ -18,7 +18,10 @@ depuis les postes clients (Windows 11 et Ubuntu 24.04).
    - [1.4 Utilisation avancée de TightVNC Viewer](#14-utilisation-avancée-de-tightvnc-viewer)
    - [1.5 Utilisation du Bureau à distance (RDP)](#15-utilisation-du-bureau-à-distance-rdp)
 2. [Client Ubuntu 24.04](#2-client-ubuntu-2404)
-
+   - [2.1 Utilisation de base de TightVNC Viewer](#21-utilisation-de-base-de-tightvnc-viewer)
+   - [2.2. Utilisation de base de OpenSSH](#22-utilisation-de-base-de-openssh)
+   - [2.3. Utilisation avancée de OpenSSH](#23-utilisation-avancée-de-openssh)
+   
 ---
 ---  
 
@@ -207,7 +210,7 @@ depuis les postes clients (Windows 11 et Ubuntu 24.04).
 
 ## 2. Client Ubuntu 24.04
 
-### 2.1 Utilisation de base de TightVNC
+### 2.1 Utilisation de base de TightVNC Viewer
 
 - Allumer votre machine client Linux Ubuntu, ici appelée "ubu01", et en parallèle votre machine serveur Windows, ici appelée "srvwin01".
 
@@ -238,7 +241,7 @@ Bonus : Pour vous déconnecter de "srvwin01", il vous suffit d'appuyer sur la cr
 ---
 ---
 
-### 2.2. Utilisation de Base d'OpenSSH
+### 2.2. Utilisation de base de OpenSSH
 
 - Allumer votre machine client Linux Ubuntu, ici appelée "ubu01", et en parallèle votre machine serveur Linux Debian, ici appelée "srvlx01", en vous connectant sur votre compte utilisateur.
 
@@ -259,12 +262,96 @@ Normalement, vous n'avez pas besoin d'entre le mot de passe du serveur car vous 
 ---
 ---
 
-2.3. Utilisation avancée d'OpenSSH  
+### 2.3. Utilisation avancée de OpenSSH  
 
 Nous allons maintenant voir comment transférer un fichier d'une machine Client Linux Ubuntu, ici, appelée "ubu01" à une machine Serveur Linux Debian, ici appelée "srvlx01". Et comment en récupérer un du serveur Linux ("srvlx01") au client Linux ("ubu01") depuis le Terminal du client Linux ("ubu01").
 
 ---
+
 - Mettez en route vos deux machines Linux simultanément (Client et Serveur).
 
 
 
+---
+
+- Pour envoyer un fichier de votre machine Client à votre machine Serveur (ici de "ubvu01" à "srvlx01") rendez-vous dans le Terminal d'Ubuntu et taper la ligne de commande suivante :  
+`scp /chemindufichierenquestion nom_utilisateur@adresse_ip_ou_nom_du_serveur:/répertoiredanslequelvousvoulezlenvoyer`
+--> Ici `scp /home/wilder/file_scp01.sh wilder@srvlx01:/home/wilder/`
+
+
+
+---
+
+- Aller sur votre machine serveur et vérifier que le fichier envoyé est bien présent dans le répertoire en question avec la commande `ls`. Vérifier aussi par la même occasion les autorisations, notamment si vous pouvez exécuter le fichier avec la commande `ls -l`.
+
+- Si ce n'est pas le cas comme dans le cas présent, activer les autorisations d'exécution pour l'utilisateur (vous en l'occurence) pour le fichier visé, ici ce sera le fichier file_scp01.sh avec la ligne de commande `chmod u+x file_scp01.sh` et vérifier ensuite avec la commande `ls -l` si les droits d'exécution pour l'utilisateur ont bien été activés.  
+On constate qu'un `x` est apparu pour l'utilisateur et que file_scp01 apparaît maintenant en vert.
+
+
+
+---
+
+- Exécutez ensuite votre fichier pour vérifier que c'est bien le vôtre.
+--> Ici on a tapé `./file_scp01.sh`.
+
+
+
+---
+
+- Retourner et effectuer la même manipulation que pour file_scp01.sh mais cette fois-ci pour un répertoire avec ce qu'il contient dedans avec la ligne de commande suivante :  
+`scp -r /chemindurépertoireenquestion nom_utilisateur@adresse_ip_ou_nom_du_serveur:/répertoiredanslequelvousvoulezlenvoyer`  
+--> Ici `scp -r /home/wilder/Project wilder@srvlx01:/home/wilder/`
+
+
+
+---
+
+- Vérifier si le répertoire en question, ici le répertoire Project, est bien là avec la commande `ls`.
+
+- Rendez-vous ensuite dans le répertoire avec la commande `cd Project/`.
+
+
+
+---
+
+- Faites ensuite exactement la même manipulation pour le fichier que le répertoire contient, ici file_scp02.sh, que pour le fichier file_scp01.sh, notamment pour les droits.
+
+
+
+---
+
+- Exécutez ensuite `./file_scp02.sh` pour vérifier si s'il s'agit bien du fichier envoyé depuis la machine Client.
+
+
+
+---
+
+Nous allons maintenant voir comment récupérer un fichier de la machine Serveur à la machine Client via l'invite de commandes, le Terminal d'Ubuntu, de la machine Client.  
+- Nous avons créé au préalable un fichier file_scp03.sh sur "srvlx01" et dans lequel nous avons vérifier si l'utilisateur avait les droits pour l'exécuter.
+
+
+
+---
+
+- Pour récupérer le fichier, taper dans le Terminal la ligne de commande suivante :  
+`scp nom_utilisateur@adresse_ip_ou_nom_du_serveur:/chemindufichierenquestion /répertoiredanslequelvousvoulezlenvoyer `  
+--> Ici, `scp wilder@srvlx01:/home/wilder/file_scp03.sh /home/wilder/Transfer_from_Debian`.  
+
+
+
+---
+
+- Placez-vous ensuite dans le répertoire dans lequel vous avez récupéré le fichier avec la commande `cd`, ici `cd Transfer_from_Debian`.
+
+- Vérifier ensuite si vous avez bien les droits d'exécution pour l'utilisateur pour pouvoir l'exécuter avec `ls -l`. Si ce n'est pas le cas, refaites la même manipulation que sur "srvlx01" vu précédemment avec `chmod`.
+
+
+
+---
+
+- Exécuter ensuite le fichier (ici, `./file_scp03.sh`) pour vérifier qu'il s'agit bien de celui récupéré sur votre machine Serveur (ici "srvlx01").
+
+
+
+
+### Voilà, vous savez comment envoyer fichiers et dossier et comment en récupérer depuis un même poste ! Bien joué !
