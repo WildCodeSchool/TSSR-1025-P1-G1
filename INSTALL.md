@@ -8,12 +8,12 @@ Ce document décrit l'installation et la configuration des outils d'administrati
 # Table des Matières
 I. [Prérequis Techniques](#I-prérequis-techniques)  
 
-II. [Installation sur Windows Server 2022](#II-installation-sur-windows-server-2022)  
+II. [Installation sur Windows Server 2022 (Serveur)](#II-installation-sur-windows-server-2022-serveur)  
    - [1. TightVNC](#1-tightvnc)  
    - [2. RDP](#2-rdp)  
    - [3. Configuration Assistance](#3-configuration-assistance)
 
-III. [Installation sur Debian 13](#III-installation-sur-debian-13)  
+III. [Installation sur Debian 13.1 (Serveur)](#III-installation-sur-debian-131-serveur)  
 
 IV. [Installation sur Windows 11 (Client)](#IV-installation-sur-windows-11-client)  
    - [1. PuTTY](#1-putty)  
@@ -68,7 +68,7 @@ Assurez-vous que chaque machine possède :
 
 
 
-# II. Installation sur Windows Server 2022
+# II. Installation sur Windows Server 2022 (Serveur)
 
 ## 1. TightVNC
 
@@ -207,7 +207,7 @@ Dans cette section nous allons ajouter un utilisateur au groupe Remote Desktop U
 ---
 ---
 
-# III. Installation sur Debian (Serveur)
+# III. Installation sur Debian 13.1 (Serveur)
 
 Pour la machine serveur Linux Debian, ici appelée "srvlx01", nous allons vérifier si la suite logicielle OpenSSH est bien installée et si le service SSH est bien activé pour les connexions via OpenSSH et PuTTY.
 
