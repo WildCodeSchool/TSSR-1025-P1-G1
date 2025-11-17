@@ -214,7 +214,7 @@ depuis les postes clients (Windows 11 et Ubuntu 24.04).
 
 - Allumer votre machine client Linux Ubuntu, ici appelée "ubu01", et en parallèle votre machine serveur Windows, ici appelée "srvwin01".
 
-
+![Image01](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_USER_GUIDE/Client_Linux/TightVNC/01_User_TightVNC_Linux.png)
 
 ---
 
@@ -222,7 +222,7 @@ depuis les postes clients (Windows 11 et Ubuntu 24.04).
 
 - Taper le mot de passe choisi au préalable sur le serveur VNC sur la machine serveur Windows.
 
-![Image01]()
+![Image02](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_USER_GUIDE/Client_Linux/TightVNC/02_User_TightVNC_Linux.png)
 
 ---
 
@@ -230,8 +230,7 @@ depuis les postes clients (Windows 11 et Ubuntu 24.04).
 
 - Regarder simultanément les écrans de "ubu01" et "srvwin01".
 
-![Image02]()   
-
+![Image03](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_USER_GUIDE/Client_Linux/TightVNC/03_User_TightVNC_Linux.png)
 
 ### Vous voilà connecté !
 
@@ -245,19 +244,24 @@ Bonus : Pour vous déconnecter de "srvwin01", il vous suffit d'appuyer sur la cr
 
 - Allumer votre machine client Linux Ubuntu, ici appelée "ubu01", et en parallèle votre machine serveur Linux Debian, ici appelée "srvlx01", en vous connectant sur votre compte utilisateur.
 
-- Rendez-vous dans le Terminal d'Ubuntu et taper ensuite la ligne de commande ssh suivante  
-`nom_utilisateur@adresse_ip_ou_nom_du_serveur` (ici wilder@srvlx01) pour ouvrir la suite logicielle OpenSSH sur votre serveur (`srvlx01` étant le nom attribué à la machine serveur sur votre machine client mais vous auriez pu bien évidemment mettre l'adresse IP du serveur à la place).  
-Normalement, vous n'avez pas besoin d'entre le mot de passe du serveur car vous avez préalablement générer un clé SSH conformément aux instructions du fichier INSTALL.
+![Image01](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_USER_GUIDE/Client_Linux/OpenSSH/Log_in_Log_out/01_User_OpenSSH_Linux.png)
 
+---
 
+- Rendez-vous dans le Terminal d'Ubuntu et taper ensuite la ligne de commande suivante   
+`ssh nom_utilisateur@adresse_ip_ou_nom_du_serveur` (ici wilder@srvlx01) pour ouvrir la suite logicielle OpenSSH sur votre serveur (`srvlx01` étant le nom attribué à la machine serveur sur votre machine client mais vous auriez pu bien évidemment mettre l'adresse IP du serveur à la place).  
+Normalement, vous n'avez pas besoin d'entre le mot de passe du serveur car vous avez préalablement générer une clé SSH conformément aux instructions du fichier INSTALL.
+
+![Image02](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_USER_GUIDE/Client_Linux/OpenSSH/Log_in_Log_out/02_User_OpenSSH_Linux.png)
 
 ### Vous voilà connecté !
 
 ---
 
-- Pour vous déconnecter, il vous suffit simplement de taper la ligne de commande `logout` dans le Terminal.
+**Bonus :**  
+- Pour vous déconnecter, il vous suffit simplement de taper la commande `logout` dans le Terminal.
 
-
+![Image03](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_USER_GUIDE/Client_Linux/OpenSSH/Log_in_Log_out/03_User_OpenSSH_Linux.png)
 
 ---
 ---
@@ -270,15 +274,15 @@ Nous allons maintenant voir comment transférer un fichier d'une machine Client 
 
 - Mettez en route vos deux machines Linux simultanément (Client et Serveur).
 
-
+![Image01](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_USER_GUIDE/Client_Linux/OpenSSH/Transfer_files/01_User_Transfer_SSH_Linux.png)
 
 ---
 
 - Pour envoyer un fichier de votre machine Client à votre machine Serveur (ici de "ubvu01" à "srvlx01") rendez-vous dans le Terminal d'Ubuntu et taper la ligne de commande suivante :  
-`scp /chemindufichierenquestion nom_utilisateur@adresse_ip_ou_nom_du_serveur:/répertoiredanslequelvousvoulezlenvoyer`
+`scp /chemindufichierenquestion nom_utilisateur@adresse_ip_ou_nom_du_serveur:/répertoiredanslequelvousvoulezlenvoyer`    
 --> Ici `scp /home/wilder/file_scp01.sh wilder@srvlx01:/home/wilder/`
 
-
+![Image02](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_USER_GUIDE/Client_Linux/OpenSSH/Transfer_files/02_User_Transfer_SSH_Linux.png)
 
 ---
 
@@ -287,22 +291,22 @@ Nous allons maintenant voir comment transférer un fichier d'une machine Client 
 - Si ce n'est pas le cas comme dans le cas présent, activer les autorisations d'exécution pour l'utilisateur (vous en l'occurence) pour le fichier visé, ici ce sera le fichier file_scp01.sh avec la ligne de commande `chmod u+x file_scp01.sh` et vérifier ensuite avec la commande `ls -l` si les droits d'exécution pour l'utilisateur ont bien été activés.  
 On constate qu'un `x` est apparu pour l'utilisateur et que file_scp01 apparaît maintenant en vert.
 
-
+![Image03](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_USER_GUIDE/Client_Linux/OpenSSH/Transfer_files/03_User_Transfer_SSH_Linux.png)
 
 ---
 
 - Exécutez ensuite votre fichier pour vérifier que c'est bien le vôtre.
 --> Ici on a tapé `./file_scp01.sh`.
 
-
+![Image04](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_USER_GUIDE/Client_Linux/OpenSSH/Transfer_files/04_User_Transfer_SSH_Linux.png)
 
 ---
 
-- Retourner et effectuer la même manipulation que pour file_scp01.sh mais cette fois-ci pour un répertoire avec ce qu'il contient dedans avec la ligne de commande suivante :  
-`scp -r /chemindurépertoireenquestion nom_utilisateur@adresse_ip_ou_nom_du_serveur:/répertoiredanslequelvousvoulezlenvoyer`  
+- Retourner sur "ubu01" et effectuer la même manipulation que pour file_scp01.sh mais cette fois-ci pour un répertoire avec ce qu'il contient dedans avec la ligne de commande suivante :  
+`scp -r /chemindurépertoireenquestion nom_utilisateur@adresse_ip_ou_nom_du_serveur:/répertoiredanslequelvousvoulezlenvoyer`   
 --> Ici `scp -r /home/wilder/Project wilder@srvlx01:/home/wilder/`
 
-
+![Image05](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_USER_GUIDE/Client_Linux/OpenSSH/Transfer_files/05_User_Transfer_SSH_Linux.png)
 
 ---
 
@@ -310,34 +314,34 @@ On constate qu'un `x` est apparu pour l'utilisateur et que file_scp01 apparaît 
 
 - Rendez-vous ensuite dans le répertoire avec la commande `cd Project/`.
 
-
+![Image06](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_USER_GUIDE/Client_Linux/OpenSSH/Transfer_files/06_User_Transfer_SSH_Linux.png)
 
 ---
 
 - Faites ensuite exactement la même manipulation pour le fichier que le répertoire contient, ici file_scp02.sh, que pour le fichier file_scp01.sh, notamment pour les droits.
 
-
+![Image07](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_USER_GUIDE/Client_Linux/OpenSSH/Transfer_files/07_User_Transfer_SSH_Linux.png)
 
 ---
 
 - Exécutez ensuite `./file_scp02.sh` pour vérifier si s'il s'agit bien du fichier envoyé depuis la machine Client.
 
-
+![Image08](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_USER_GUIDE/Client_Linux/OpenSSH/Transfer_files/08_User_Transfer_SSH_Linux.png)
 
 ---
 
 Nous allons maintenant voir comment récupérer un fichier de la machine Serveur à la machine Client via l'invite de commandes, le Terminal d'Ubuntu, de la machine Client.  
 - Nous avons créé au préalable un fichier file_scp03.sh sur "srvlx01" et dans lequel nous avons vérifier si l'utilisateur avait les droits pour l'exécuter.
 
-
+![Image09](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_USER_GUIDE/Client_Linux/OpenSSH/Transfer_files/09_User_Transfer_SSH_Linux.png)
 
 ---
 
 - Pour récupérer le fichier, taper dans le Terminal la ligne de commande suivante :  
-`scp nom_utilisateur@adresse_ip_ou_nom_du_serveur:/chemindufichierenquestion /répertoiredanslequelvousvoulezlenvoyer `  
+`scp nom_utilisateur@adresse_ip_ou_nom_du_serveur:/chemindufichierenquestion /répertoiredanslequelvousvoulezlenvoyer `   
 --> Ici, `scp wilder@srvlx01:/home/wilder/file_scp03.sh /home/wilder/Transfer_from_Debian`.  
 
-
+![Image10](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_USER_GUIDE/Client_Linux/OpenSSH/Transfer_files/10_User_Transfer_SSH_Linux.png)
 
 ---
 
@@ -345,13 +349,14 @@ Nous allons maintenant voir comment récupérer un fichier de la machine Serveur
 
 - Vérifier ensuite si vous avez bien les droits d'exécution pour l'utilisateur pour pouvoir l'exécuter avec `ls -l`. Si ce n'est pas le cas, refaites la même manipulation que sur "srvlx01" vu précédemment avec `chmod`.
 
-
+![Image11](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_USER_GUIDE/Client_Linux/OpenSSH/Transfer_files/11_User_Transfer_SSH_Linux.png)
 
 ---
 
 - Exécuter ensuite le fichier (ici, `./file_scp03.sh`) pour vérifier qu'il s'agit bien de celui récupéré sur votre machine Serveur (ici "srvlx01").
 
+![Image12](https://github.com/WildCodeSchool/TSSR-1025-P1-G1/blob/main/Ressources/Screens_USER_GUIDE/Client_Linux/OpenSSH/Transfer_files/12_User_Transfer_SSH_Linux.png)
 
 
-
-### Voilà, vous savez comment envoyer fichiers et dossier et comment en récupérer depuis un même poste ! Bien joué !
+### Voilà, vous savez comment envoyer fichiers et dossier et comment en récupérer depuis un même poste !  
+### Bien joué !
